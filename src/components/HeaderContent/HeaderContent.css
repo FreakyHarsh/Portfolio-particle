@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+.header-main {
+  font-family: 'Open Sans';
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-name {
+  font-weight: 700;
+  font-size: 5rem;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.header-role {
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-name {
+    font-size: 3rem;
+  }
+  .header-role {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .fix-surname {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}

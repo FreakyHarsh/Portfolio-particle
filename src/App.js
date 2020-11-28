@@ -1,12 +1,18 @@
 import './App.css';
+// import 'devicon';
 
-import ParticleContainer from './components/ParticleContainer/ParticleContainer';
+import HeaderContent from './components/HeaderContent/HeaderContent';
+import Project from './components/Project/Project';
 
 function App() {
   return (
     <div>
-      <div className="app-main">Harsh</div>
-      <ParticleContainer />
+      <HeaderContent />
+      <Project />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
