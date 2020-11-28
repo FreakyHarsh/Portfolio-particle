@@ -31,9 +31,6 @@ function Project(props) {
       ) : (
         <Container>
           <Row className="justify-content-center align-items-stretch">
-            <Col sm={12} md={5} lg={4}>
-              <img src={props.imgsrc} alt="Flutter app" className="project-image" />
-            </Col>
             <Col sm={12} md={7} lg={4}>
               <div className="d-flex flex-column justify-content-center p-2 ml-lg-5">
                 <div className="project-title">Flutter ChatApp</div>
@@ -44,6 +41,9 @@ function Project(props) {
                 </ul>
                 <button className="project-btn-live">Demo</button>
               </div>
+            </Col>
+            <Col sm={12} md={5} lg={4}>
+              <img src={props.imgsrc} alt="Flutter app" className="project-image" />
             </Col>
           </Row>
         </Container>
