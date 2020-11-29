@@ -1,20 +1,14 @@
 import './App.css';
 // import 'devicon';
-import flutterImg from './shared/images/flutter.png';
+
 import HeaderContent from './components/HeaderContent/HeaderContent';
-import Project from './components/Project/Project';
+import Projects from './components/Projects/Projects';
 
 function App() {
   return (
     <div>
       <HeaderContent />
-      <Project
-        imageFirst={false}
-        imgsrc={flutterImg}
-        title="Flutter ChatApp"
-        description="A flutter application using Firebase for college confession."
-        techList={['Dart', 'Firebase']}
-      />
+      <Projects />
       <br />
       <br />
       <br />

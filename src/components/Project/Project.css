@@ -1,10 +1,7 @@
-html {
-  background-color: #2b31376b !important;
-}
-
 .project-image {
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   border: 1px solid #989898;
   border-radius: 5%;
   box-shadow: 5px 5px #ccc;
@@ -13,7 +10,7 @@ html {
 .project-title {
   font-family: 'Open Sans', 'Courier New', Courier, monospace;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .project-btn-live {

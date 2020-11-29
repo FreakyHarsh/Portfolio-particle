@@ -6,21 +6,20 @@ import './Project.css';
 
 function Project(props) {
   return (
-    <div className="projects">
-      <h2 className="text-center p-5">My Projects</h2>
+    <div className="projects mb-5">
       {props.imageFirst ? (
         <Container>
-          <Row className="justify-content-center align-items-stretch">
+          <Row className="justify-content-center">
             <Col sm={12} md={5} lg={4}>
-              <img src={props.imgsrc} alt="Flutter app" className="project-image" />
+              <img src={props.imgsrc} alt={props.title} className="project-image" />
             </Col>
             <Col sm={12} md={7} lg={4}>
-              <div className="d-flex flex-column justify-content-center p-2 ml-lg-5">
+              <div className="d-flex flex-column justify-content-center p-3 ml-lg-5">
                 <div className="project-title">{props.title}</div>
                 <div className="project-description">{props.description}</div>
                 <ul className="project-tech">
-                  {props.techList.forEach((tech) => {
-                    return <li>tech</li>;
+                  {props.techList.map((tech) => {
+                    return <li key={Math.random()}>{tech}</li>;
                   })}
                 </ul>
                 <button className="project-btn-live">Demo</button>
@@ -30,20 +29,21 @@ function Project(props) {
         </Container>
       ) : (
         <Container>
-          <Row className="justify-content-center align-items-stretch">
+          <Row className="justify-content-center">
             <Col sm={12} md={7} lg={4}>
-              <div className="d-flex flex-column justify-content-center p-2 ml-lg-5">
-                <div className="project-title">Flutter ChatApp</div>
-                <div className="project-description">A flutter application using Firebase for college confession.</div>
+              <div className="d-flex flex-column justify-content-center p-3 ml-lg-5">
+                <div className="project-title">{props.title}</div>
+                <div className="project-description">{props.description}</div>
                 <ul className="project-tech">
-                  <li>Dart</li>
-                  <li>Firebase</li>
+                  {props.techList.map((tech) => {
+                    return <li>{tech}</li>;
+                  })}
                 </ul>
                 <button className="project-btn-live">Demo</button>
               </div>
             </Col>
-            <Col sm={12} md={5} lg={4}>
-              <img src={props.imgsrc} alt="Flutter app" className="project-image" />
+            <Col sm={12} lg={4} xs={{ order: 'first' }} md={{ span: '4', order: 'last' }}>
+              <img src={props.imgsrc} alt={props.title} className="project-image" />
             </Col>
           </Row>
         </Container>
