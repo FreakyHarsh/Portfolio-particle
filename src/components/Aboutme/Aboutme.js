@@ -6,16 +6,12 @@ import { Container, Row, Col } from 'react-bootstrap';
 function Aboutme(props) {
   return (
     <div className="aboutme" id="about-me">
-      <h1 style={{ textAlign: 'center' }} className="pt-5 pb-3">
-        {' '}
-        ABOUT ME
-      </h1>
-
+      <h1 className="pt-5 pb-3 text-center">ABOUT ME</h1>
       <Container>
         <Row className="justify-content-center">
           <p className="aboutme-para text-center">
             I'm a Full-Stack Developer <i className="devicon-react-original colored"></i>
-            <br />I turn coffee into code, use tabs over spaces and never broke production.
+            <br />I turn coffee into code, use tabs over spaces, and never break production.
           </p>
         </Row>
         <Row>
@@ -27,8 +23,7 @@ function Aboutme(props) {
               <i className="devicon-bootstrap-plain-wordmark colored"></i>
             </div>
             <p className="aboutme-para">
-              I can design websites in figma and can covert any design to actual working website using technologies like HTML, CSS, JS and some
-              frameworks.
+              I can design websites in figma and can covert any design to actual working website using various technologies and frameworks.
             </p>
           </Col>
           <Col sm={12} md={4} className="d-flex flex-column align-items-center">
@@ -39,8 +34,8 @@ function Aboutme(props) {
               <i className="devicon-javascript-plain colored"></i>
             </div>
             <p className="aboutme-para">
-              I am a Full-Stack ReactJS developer who believes in writing neat and elegant code following DRY principle. Along with JavaScript, I can
-              also code in Python & Dart;
+              I am a Full-Stack ReactJS developer who believes in writing tidy and elegant code in line with the DRY principle. I can also use
+              Angular, React native and Flutter to build websites and mobile apps.
             </p>
           </Col>
           <Col sm={12} md={4} className="d-flex flex-column align-items-center">
@@ -55,6 +50,8 @@ function Aboutme(props) {
           </Col>
         </Row>
       </Container>
+      <br />
+      <br />
       <br />
     </div>
   );

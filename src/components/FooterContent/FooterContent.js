@@ -1,9 +1,13 @@
 import './FooterContent.css';
 import React from 'react';
+
 function FooterContent(props) {
+  const Marquee = ({ children }) => {
+    return <marquee className="p-3">{children}</marquee>;
+  };
   return (
     <div className="footer">
-      <div className="text-center p-3">Build with ReactJS and ❤️ by Harsh Boricha</div>
+      <Marquee>Build with ReactJS and ❤️ by Harsh Boricha</Marquee>
     </div>
   );
 }
