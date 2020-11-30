@@ -3,12 +3,9 @@ import React from 'react';
 import 'devicon';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import 'font-awesome/css/font-awesome.css';
-import { HashLink } from 'react-router-hash-link';
-
 function Aboutme(props) {
   return (
-    <div className="About-me" id="about-me">
+    <div className="aboutme" id="about-me">
       <h1 style={{ textAlign: 'center' }} className="pt-5 pb-3">
         {' '}
         ABOUT ME
@@ -58,12 +55,6 @@ function Aboutme(props) {
           </Col>
         </Row>
       </Container>
-      <div className="d-flex justify-content-end" title="TOP">
-        <HashLink to="#top" smooth className="top">
-          <i className="icon fa fa-arrow-up px-2"></i>
-        </HashLink>
-      </div>
-
       <br />
     </div>
   );

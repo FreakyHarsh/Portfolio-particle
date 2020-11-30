@@ -27,12 +27,12 @@ function HeaderContent(props) {
         <ul className="header-contactlist d-flex justify-content-center">
           <li className="mr-2">
             <Mailto email="harsh.boricha2015@gmail.com" subject="Contact through Portfolio" body="Hello Harsh,I really like your Online Portfolio.">
-              <i className="icon fa fa-envelope px-2"></i>
+              <i className="fa fa-envelope px-2"></i>
             </Mailto>
           </li>
           <li className="mr-2">
             <Link to={{ pathname: 'https://twitter.com/FreakyHarsh' }} target="_blank" className="header-contactlist-iconwrapper">
-              <i className="icon fa fa-twitter px-2"></i>
+              <i className="fa fa-instagram px-2" aria-hidden="true"></i>
             </Link>
           </li>
           <li className="mr-2">
@@ -41,12 +41,12 @@ function HeaderContent(props) {
               target="_blank"
               className="header-contactlist-iconwrapper"
             >
-              <i className="icon fa fa-linkedin px-2"></i>
+              <i className="fa fa-linkedin px-2"></i>
             </Link>
           </li>
           <li className="mr-2">
             <Link to={{ pathname: 'https://github.com/FreakyHarsh' }} target="_blank" className="header-contactlist-iconwrapper">
-              <i className="icon fa fa-github-alt px-2"></i>
+              <i className="fa fa-github-alt px-2"></i>
             </Link>
           </li>
         </ul>

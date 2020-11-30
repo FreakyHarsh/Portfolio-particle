@@ -1,5 +1,7 @@
 import './Projects.css';
 import React from 'react';
+import 'font-awesome/css/font-awesome.css';
+import { HashLink } from 'react-router-hash-link';
 
 import Project from '../Project/Project';
 import flutterImg from '../../shared/images/flutter.png';
@@ -48,7 +50,11 @@ function Projects(props) {
         demoLink="https://freakyharsh.github.io/Status-Code/"
         githubLink="https://github.com/FreakyHarsh/Status-Code"
       />
-      <br />
+      <div className="d-flex justify-content-end">
+        <HashLink to="#top" smooth className="top" title="TOP">
+          <i className="icon fa fa-arrow-up px-2"></i>
+        </HashLink>
+      </div>
       <br />
     </div>
   );

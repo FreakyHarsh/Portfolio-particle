@@ -9,8 +9,8 @@ function App() {
     <div>
       <BrowserRouter>
         <HeaderContent />
-        <Projects />
         <Aboutme />
+        <Projects />
         <FooterContent />
       </BrowserRouter>
     </div>
