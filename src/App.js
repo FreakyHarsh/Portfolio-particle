@@ -1,18 +1,18 @@
 import './App.css';
-// import 'devicon';
-
+import { BrowserRouter } from 'react-router-dom';
 import HeaderContent from './components/HeaderContent/HeaderContent';
 import Projects from './components/Projects/Projects';
-
+import Aboutme from './components/Aboutme/Aboutme';
+import FooterContent from './components/FooterContent/FooterContent';
 function App() {
   return (
     <div>
-      <HeaderContent />
-      <Projects />
-      <br />
-      <br />
-      <br />
-      <br />
+      <BrowserRouter>
+        <HeaderContent />
+        <Projects />
+        <Aboutme />
+        <FooterContent />
+      </BrowserRouter>
     </div>
   );
 }

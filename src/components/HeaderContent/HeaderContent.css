@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
-
 .header-main {
-  font-family: 'Open Sans';
   color: white;
   position: absolute;
   top: 50%;
@@ -10,10 +7,13 @@
 }
 
 .header-name {
+  font-family: 'OpenSans-Bold';
   font-weight: 700;
   font-size: 5rem;
   text-align: center;
   word-wrap: break-word;
+  padding: 0;
+  margin-bottom: -1rem;
 }
 
 .header-role {
@@ -21,6 +21,31 @@
   text-align: center;
 }
 
+.header-navlink {
+  font-size: 1.4rem;
+  color: white;
+}
+.header-navlink:hover {
+  text-decoration: none;
+  color: #dcdcdc;
+}
+
+.header-contactlist {
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+.header-contactlist-iconwrapper {
+  display: block;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 100%;
+  color: white;
+  transition: background-color 1s ease-out;
+}
+.header-contactlist-iconwrapper:hover {
+  color: black;
+  background-color: white;
+}
 @media only screen and (max-width: 600px) {
   .header-name {
     font-size: 3rem;
@@ -29,8 +54,13 @@
     font-size: 1rem;
     text-align: center;
   }
+  .header-navlink {
+    font-size: 0.8rem;
+  }
   .fix-surname {
-    margin-top: 0;
-    padding-top: 0;
+    position: relative;
+    top: -15px;
+    padding: 0;
+    margin: 0;
   }
 }

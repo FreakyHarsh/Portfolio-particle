@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import flutterImg from '../../shared/images/flutter.png';
 import './Project.css';
 
 function Project(props) {
@@ -22,8 +22,13 @@ function Project(props) {
                     return <li key={Math.random()}>{tech}</li>;
                   })}
                 </ul>
-                <button className="project-btn-live">Demo</button>
               </div>
+              <Link to={{ pathname: props.demoLink }} target="_blank" className="project-btn-live mr-2">
+                Demo
+              </Link>
+              <Link to={{ pathname: props.githubLink }} target="_blank" className="project-btn-live">
+                <i className="devicon-github-plain"></i> GitHub
+              </Link>
             </Col>
           </Row>
         </Container>
@@ -36,11 +41,16 @@ function Project(props) {
                 <div className="project-description">{props.description}</div>
                 <ul className="project-tech">
                   {props.techList.map((tech) => {
-                    return <li>{tech}</li>;
+                    return <li key={Math.random()}>{tech}</li>;
                   })}
                 </ul>
-                <button className="project-btn-live">Demo</button>
               </div>
+              <Link to={{ pathname: props.demoLink }} target="_blank" className="project-btn-live mr-2">
+                Demo
+              </Link>
+              <Link to={{ pathname: props.githubLink }} target="_blank" className="project-btn-live">
+                <i className="devicon-github-plain"></i> GitHub
+              </Link>
             </Col>
             <Col sm={12} lg={4} xs={{ order: 'first' }} md={{ span: '4', order: 'last' }}>
               <img src={props.imgsrc} alt={props.title} className="project-image" />
