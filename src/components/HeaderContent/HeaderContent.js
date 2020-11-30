@@ -31,7 +31,7 @@ function HeaderContent(props) {
             </Mailto>
           </li>
           <li className="mr-2">
-            <Link to={{ pathname: 'https://twitter.com/FreakyHarsh' }} target="_blank" className="header-contactlist-iconwrapper">
+            <Link to={{ pathname: 'https://www.instagram.com/freaky_harsh/' }} target="_blank" className="header-contactlist-iconwrapper">
               <i className="fa fa-instagram px-2" aria-hidden="true"></i>
             </Link>
           </li>
