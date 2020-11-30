@@ -58,7 +58,7 @@ function Aboutme(props) {
           </Col>
         </Row>
       </Container>
-      <div className="d-flex justify-content-end">
+      <div className="d-flex justify-content-end" title="TOP">
         <HashLink to="#top" smooth className="top">
           <i className="icon fa fa-arrow-up px-2"></i>
         </HashLink>

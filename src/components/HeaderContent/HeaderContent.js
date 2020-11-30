@@ -26,7 +26,7 @@ function HeaderContent(props) {
         <div className="header-role">SOFTWARE DEVELOPER</div>
         <ul className="header-contactlist d-flex justify-content-center">
           <li className="mr-2">
-            <Mailto email="foo@bar.baz" subject="Hello & Welcome" body="Hello world!">
+            <Mailto email="harsh.boricha2015@gmail.com" subject="Contact through Portfolio" body="Hello Harsh,I really like your Online Portfolio.">
               <i className="icon fa fa-envelope px-2"></i>
             </Mailto>
           </li>
