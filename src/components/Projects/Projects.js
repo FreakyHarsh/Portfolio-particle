@@ -44,7 +44,7 @@ function Projects(props) {
           imgsrc={gm24Img}
           title="Productivity Tracker"
           description="An mobile friendly application to track productivity."
-          techList={['NodeJS', 'EJS', 'Heroku', 'JavaScript', 'SCSS']}
+          techList={['NodeJS', 'MongoDB', 'EJS', 'Heroku', 'JavaScript', 'SCSS']}
           demoLink="https://god-mode-24.herokuapp.com/"
           githubLink="https://github.com/FreakyHarsh/GM24"
         />

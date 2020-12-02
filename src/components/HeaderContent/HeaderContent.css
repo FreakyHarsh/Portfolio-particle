@@ -42,7 +42,7 @@
   border: 1px solid white;
   border-radius: 100%;
   color: white;
-  transition: background-color 1s ease-out;
+  transition: background-color 0.2s ease-out;
 }
 .header-contactlist-iconwrapper:hover {
   color: black;
