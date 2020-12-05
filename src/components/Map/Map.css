@@ -1,0 +1,43 @@
+/* .mapContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.sidebarStyle {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  background-color: #404040;
+  color: #ffffff;
+  z-index: 1 !important;
+  padding: 6px;
+  font-weight: bold;
+} */
+.sidebarStyle {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 10%;
+  z-index: 11;
+}
+.map {
+  padding: 1rem;
+  position: relative;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+}
+.mapContainer {
+  position: absolute;
+  border: 1px solid red;
+  border-radius: 10px;
+  width: 80%;
+  height: 30rem;
+  display: block;
+  z-index: 10;
+}

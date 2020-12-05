@@ -3,7 +3,7 @@
 .eslintcache
 .firebaserc
 firebase.json
-
+/src/shared/keys
 # dependencies
 /node_modules
 /.pnp
