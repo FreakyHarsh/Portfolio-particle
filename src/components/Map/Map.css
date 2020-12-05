@@ -28,7 +28,6 @@
 .map {
   padding: 1rem;
   position: relative;
-  background-color: green;
   display: flex;
   justify-content: center;
 }
