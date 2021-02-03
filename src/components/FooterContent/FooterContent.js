@@ -1,14 +1,12 @@
 import './FooterContent.css';
 import React from 'react';
+import { Box, Typography } from '@material-ui/core';
 
 function FooterContent(props) {
-  const Marquee = ({ children }) => {
-    return <marquee className="p-3">{children}</marquee>;
-  };
   return (
-    <div className="footer">
-      <Marquee>Build with ReactJS and ❤️ by Harsh Boricha</Marquee>
-    </div>
+    <Box className='footer' style={{ textAlign: 'center' }} p={2}>
+      <Typography variant='overline'>Build with ReactJS and ❤️ by Harsh Boricha</Typography>
+    </Box>
   );
 }
 
