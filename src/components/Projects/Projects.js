@@ -20,8 +20,8 @@ function Projects(props) {
         <Project
           imageFirst={false}
           imgsrc={funWithFlags}
-          title='HTTP Status Codes'
-          description='A cheatsheet for status code with meaning.'
+          title='Fun With Flags'
+          description='A React Website to get information of various countries.'
           techList={['ReactJS', 'ChakraUI', 'ContextAPI', 'TypeScript']}
           demoLink='https://funwithflags-1e7a2.web.app/'
           githubLink='https://github.com/FreakyHarsh/worldFlags'
